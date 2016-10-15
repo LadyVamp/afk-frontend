@@ -1,0 +1,41 @@
+/* Fonts */
+@font-face {
+    font-family: "WhitneyBook";
+    src: url("../fonts/fonts/WhitneyBook/WhitneyBook.eot");
+    src: url("../fonts/fonts/WhitneyBook/WhitneyBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/fonts/WhitneyBook/WhitneyBook.woff") format("woff"),
+    url("../fonts/fonts/WhitneyBook/WhitneyBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "WhitneyLight"; */
+@font-face {
+    font-family: "WhitneyLight";
+    src: url("../fonts/fonts/WhitneyLight/WhitneyLight.eot");
+    src: url("../fonts/fonts/WhitneyLight/WhitneyLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/fonts/WhitneyLight/WhitneyLight.woff") format("woff"),
+    url("../fonts/fonts/WhitneyLight/WhitneyLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Variables*/
+@bgColor: #e6f0fa;
+@headerBgColor: #005587;
+
+
+body {
+  background-color: @bgColor;
+  color: softlight(#607D8B, #fff);
+  font-family: 'WhitneyBook','WhitneyLight','Helvetica','Arial', sans-serif;
+}
+
+/* Header */
+.navbar-default{
+  background-color: @headerBgColor;
+}
+header {
+  img {
+    width: 120px;
+  }
+}
