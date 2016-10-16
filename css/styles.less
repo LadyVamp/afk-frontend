@@ -21,9 +21,10 @@
 
 body {
   background-color: @bgColor;
-  color: softlight(#607D8B, @white);
+  color: black;
   font-family: 'WhitneyBook','WhitneyLight','Helvetica','Arial', sans-serif;
 }
+
 
 /* Variables */
 @bgColor: #e6f0fa;
@@ -32,6 +33,10 @@ body {
 @black: #000;
 @orange: #fbb050;
 @asideBg: #cce0f4;
+@articleIntro: #5993ce;
+@red: #d2232a;
+@green: #00703a;
+@blue: #005587;
 
 
 /* Header */
@@ -89,14 +94,7 @@ header {
 }
 
 /* aside */
-ul {
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
-   }
 
-li {
-    list-style-type: none; /* Убираем маркеры */
-}
 
 .panel-default {
   .panel-heading {
@@ -112,6 +110,15 @@ li {
     }
     }
   .panel-body {
+    ul {
+      margin-left: 0; /* Отступ слева в браузере IE и Opera */
+      padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+     }
+
+    li {
+      list-style-type: none; /* Убираем маркеры */
+    }
+
     background-color: @asideBg;
     a {
           color: @black;
@@ -130,3 +137,110 @@ li {
     }      
   }  
 }
+
+/* main */
+h1, h2 {
+  color: @blueBgColor;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.orange {
+  color: @orange;
+}
+
+.red {
+  color: @red;
+}
+
+.green {
+  color: @green;
+}
+
+.blue{
+  color: @blue;
+}
+
+.blue-headers {
+  h3 {
+    color: @blue;
+  }
+}
+
+.green-headers {
+  h3 {
+    color: @green;
+  }
+}
+
+.space {
+  margin-top: 40px;
+}
+
+
+article {
+  a {
+    .fa{
+      font-size: 3em;
+      float: right;
+      padding: 10px;
+    }
+  }
+
+  .intro {
+    color: @articleIntro;
+  }
+
+  .portrait-quote {
+    img {
+      float: right;
+      padding-left: 10px;
+      padding-right: 10px;
+      
+    }
+
+    blockquote {
+       font-size: 12px;
+       text-align: justify;
+       color: @articleIntro;
+       font-style: italic;
+       span {
+         color: @black;
+       }
+    }
+   
+  }
+
+  p {
+    color: @black;
+  }
+
+  .standart {
+    color: @white;
+    background-color: @articleIntro;
+    width: 50px;
+    padding-left: 5px;    
+  }
+
+  img {
+    text-align: center;
+  }
+
+  .light-blue-rectangle {
+    background-color: @asideBg;
+    color: @blue;
+    padding: 5px;
+  }    
+  } /* /article */
+
+  
