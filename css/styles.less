@@ -29,7 +29,10 @@ body {
 @bgColor: #e6f0fa;
 @blueBgColor: #005587;
 @white: #fff;
+@black: #000;
 @orange: #fbb050;
+@asideBg: #cce0f4;
+
 
 /* Header */
 header {
@@ -85,5 +88,45 @@ header {
   }  
 }
 
-/* Header */
+/* aside */
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
 
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.panel-default {
+  .panel-heading {
+    color: @white;
+    background-color: @blueBgColor;
+    border-color: #ddd;
+    text-transform: uppercase;
+    h2 {
+      text-align: center;
+      i {
+        padding-right: 5px;
+      }
+    }
+    }
+  .panel-body {
+    background-color: @asideBg;
+    a {
+          color: @black;
+      } 
+
+    .hover-active(){ /*Mixin*/
+       color: @white;
+       background-color: @blueBgColor;
+       text-decoration: none;
+    }
+    a:hover {
+      .hover-active;
+    } 
+    a:active {
+      .hover-active;
+    }      
+  }  
+}
