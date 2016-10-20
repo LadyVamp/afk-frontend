@@ -89,8 +89,10 @@ header {
 }
 /* /Header  */
 
-/* aside */
 
+/* aside */
+//  accordeon внутри aside 
+aside {
 .panel-default {
   .panel-heading {
     color: @white;
@@ -104,7 +106,7 @@ header {
       }
     }
     }
-  .panel-body {
+  .panel-body{
     ul {
       margin-left: 0; /* Отступ слева в браузере IE и Opera */
       padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
@@ -131,6 +133,8 @@ header {
       .hover-active;
     }      
   }  
+}
+
 }
 /* /aside */
 
@@ -240,7 +244,60 @@ article {
     color: @blue;
     padding: 5px;
   }    
-  } /* /article */
+  } 
+
+/* accordeon внутри article */
+article {
+  .panel-default {
+  .panel-heading {
+    color: @white;
+    background-color: @blueBgColor;
+    border-color: #ddd;
+    text-transform: uppercase;
+    h2 {
+      text-align: center;
+      i {
+        padding-right: 5px;
+      }
+    }
+    }
+  .panel-body {
+    background-color: @bgColor !important;
+    ul {
+      margin-left: 0; /* Отступ слева в браузере IE и Opera */
+      padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+     }
+
+    li {
+      list-style-type: none; /* Убираем маркеры */
+    }
+
+    background-color: @asideBg;
+    a {
+          color: @black;
+      } 
+
+    .hover-active(){ /*Mixin*/
+       color: @white;
+       background-color: @blueBgColor;
+       text-decoration: none;
+    }
+    a:hover {
+      .hover-active;
+    } 
+    a:active {
+      .hover-active;
+    }      
+  }  
+}
+}
+/* /accordeon */
+
+
+
+
+
+  /* /article */
   
 
 /* footer */
