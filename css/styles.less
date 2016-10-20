@@ -268,9 +268,15 @@ article {
       padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
      }
 
-    li {
-      list-style-type: none; /* Убираем маркеры */
-    }
+    /* Оранжевые маркеры */
+     li {
+    list-style-type: none; /* Прячем исходные маркеры */
+   }
+   li:before {
+    color: @orange; /* Цвет маркера */
+    content: "• "; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+   }
 
     background-color: @asideBg;
     a {
