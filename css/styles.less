@@ -243,8 +243,56 @@ article {
     background-color: @asideBg;
     color: @blue;
     padding: 5px;
-  }    
   } 
+
+
+/* business-model p 28 */
+.business-model {
+
+  .rect {
+    width: 200px;
+    height: 75px;
+    background-color: @orange;
+    margin-left: 10px;
+    p {
+      color: @blue;
+      text-transform: uppercase;
+      // padding-left: 5px;
+      padding-top: 20px;
+      text-align: center;
+    }
+   
+}  
+ .rect:hover {
+      background-color: lighten(@orange, 10%); 
+    }
+
+.rect:hover::after { 
+ content: attr(data-title); 
+}
+
+ .rect {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+   }
+   .rect:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: darken(@bgColor, 10%); 
+    // background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    // font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #ccc; /* Параметры рамки */
+    cursor: pointer;
+   }
+
+  }  
+  
+  /* /business-model*/  
+  } /* /article */
 
 /* accordeon внутри article */
 article {
