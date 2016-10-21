@@ -247,51 +247,54 @@ article {
 
 
 /* business-model p 28 */
+.bm-container {
+  overflow: hidden;
+  width: 600px;
+}
 .business-model {
+  white-space: nowrap;
 
   .rect {
+    display:inline-block;
+    margin: 10px;   
     width: 200px;
     height: 75px;
-    background-color: @orange;
-    margin-left: 10px;
+    padding: 10px;
+    position: relative; 
+
     p {
-      color: @blue;
+      color: @white;
       text-transform: uppercase;
-      // padding-left: 5px;
-      padding-top: 20px;
+      // padding-top: 20px;
       text-align: center;
     }
-   
-}  
- .rect:hover {
-      background-color: lighten(@orange, 10%); 
-    }
+} /* /rect */ 
 
-.rect:hover::after { 
- content: attr(data-title); 
-}
+    /* фон прямоугольников */
+    .orange-bg { background-color: @orange; }
+    .blue-bg { background-color: @blue; }
+    .red-bg { background-color: @red; }
+    .green-bg { background-color: @green; }
+    /* смена цвета фона при наведении */
+    .orange-bg:hover { background-color: lighten(@orange, 10%); }
+    .blue-bg:hover { background-color: lighten(@blue, 10%); }
+    .green-bg:hover { background-color: lighten(@green, 10%); }
+    .red-bg:hover { background-color: lighten(@red, 10%); }    
 
- .rect {
-    display: inline-block; /* Строчно-блочный элемент */
-    position: relative; /* Относительное позиционирование */
-   }
-   .rect:hover::after {
-    content: attr(data-title); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
+    /* всплывающая подсказка */
+    .rect:hover::after { 
+    content: attr(data-title); 
+    position: absolute; 
     left: 40%; top: 30%; /* Положение подсказки */
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    z-index: 1; 
     background: darken(@bgColor, 10%); 
-    // background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
-    // font-family: Arial, sans-serif; /* Гарнитура шрифта */
-    font-size: 11px; /* Размер текста подсказки */
-    padding: 5px 10px; /* Поля */
-    border: 1px solid #ccc; /* Параметры рамки */
+    font-size: 11px; 
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
     cursor: pointer;
-   }
-
-  }  
+    }
   
-  /* /business-model*/  
+ } /* /business-model*/  
   } /* /article */
 
 /* accordeon внутри article */
