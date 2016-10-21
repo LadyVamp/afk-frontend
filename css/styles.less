@@ -262,6 +262,12 @@ article {
 }
 .business-model {
   white-space: nowrap;
+  background-image: url(/img/1.1/bg-rect.png);
+  background-repeat: no-repeat;
+  
+  .space {
+  margin-top: 20px;
+}
 
   .rect {
     display:inline-block;
@@ -270,13 +276,17 @@ article {
     height: 75px;
     padding: 10px;
     position: relative; 
+    // word-wrap: break-word;
+    text-overflow: clip;
 
     p {
       color: @white;
       text-transform: uppercase;
       // padding-top: 20px;
       text-align: center;
-    }
+      // word-wrap: break-word;
+      text-overflow: clip;
+     }
 } /* /rect */ 
 
     /* фон прямоугольников */
@@ -302,7 +312,9 @@ article {
     border: 1px solid #ccc; 
     cursor: pointer;
     }
-  
+
+
+
  } /* /business-model*/  
   } /* /article */
 
