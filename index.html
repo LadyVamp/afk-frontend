@@ -37,35 +37,49 @@
 </head>
 <body>
 
-<!-- Header -->
-<header class="navbar navbar-default ">
-  <div class="container"> 
-    <div class="col-md-3  col-xs-3 ">
-      <a class="navbar-brand logo" href="index.html"><img src="img/afk-logo.jpg" alt="logo"></a>
-    </div>
-     <div class="col-md-3  col-xs-3 download"><a href="#">Скачать PDF (14.9 Mb)</a></div>
-     <!-- <div class="col-md-2"></div> -->
+<div class="container"> 
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="index.html"><img src="img/afk-logo.jpg" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#"><i class="icons fa fa-cogs"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icons fa fa-adjust"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icons en"></i>EN</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icons fa fa-sitemap"></i></a>
+                    </li>
+                    <li>
 
-     <div class="col-md-3  col-xs-6 icons">
-        <a href="#"><i class="fa fa-cogs"></i></a>
-        <a href="#"><i class="fa fa-adjust"></i></a>
-        <a href="#">EN</a>
-        <a href="#"><i class="fa fa-sitemap"></i></a>
-     </div>
-
-     <div class="col-md-3  col-xs-12 search">
-     <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Поиск...">
+                    <form class="navbar-form pull-left navbar-search ">
+                      <input type="text" class="search-query" placeholder="Search">
+                      <button type="submit" class="btn"><i class="fa fa-search my-fa-2"></i></button>
+                    </form>
+                    </li>                           
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <button type="submit" class="btn btn-default"> <i class="fa fa-search my-fa-2"></i></button>
-    </form>
-     </div> 
+        <!-- /.container -->
+    </nav>
 
 
-     <!-- <div class="col-md-1"></div> -->
-  </div>
-</header>
+   
 
 <div class="container">
 <!-- Left menu -->

@@ -39,8 +39,8 @@ body {
 @blue: #005587;
 
 
-/* Header */
-header {
+/* Navigation */
+.navbar-brand {
   img {
     width: 130px;
   }
@@ -49,9 +49,14 @@ header {
 .navbar-default{
   background-color: @blueBgColor;
   height: 60px;
-  color: @white;
 }
 
+#right-icons {
+  ul {
+     color: @white;
+  }
+ 
+}
 .download{
   padding-top: 20px;
 }
@@ -64,30 +69,33 @@ header {
   color: @orange;
 }
 
-.search {
+.search-query {
   padding-left: 10px;
 }
 
-.navbar-form {
+.navbar-search {
     padding-top: 15px;
     margin: 0;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.navbar-form .form-control {
-    width: 140px;  
+.navbar-default .navbar-nav>li>a {
+    color: @white;
 }
 
 .icons{
   font-size: 2em;
-  padding-top: 10px;
+  color: @white;
   a{
     color: @white;
     padding-right: 10px;
   }  
+  
+
 }
-/* /Header  */
+
+/* /Navigation  */
 
 
 /* aside */
