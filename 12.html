@@ -26,6 +26,7 @@
   <!-- Scripts -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/graphs.js"></script>
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -189,8 +190,6 @@
  </div><!-- /#sidebar-wrapper -->
  </div> <!--/container sidebar-->
 
-<!-- <div class="space-for-navbar"></div> -->
-
 <div class="col-md-offset-3 col-md-9 col-xs-12 print-and-likes">
   <a title="Печать"><i class="fa fa-print"></i></a>
   <a title="Добавить в Избранное"><i class="fa fa-star-o"></i></a>
@@ -208,27 +207,112 @@
       и социальной сфер регионов присутствия и страны в целом
       за счет распределения созданной стоимости.
     </div>
-    <div class="number-and-icon col-md-5"></div>
+    <div class="number-and-icon col-md-5">
+      <span>~ 1 %</span>
+      <img src="img/1.2/receiveCash.png" alt="receiveCash">
+      <p>составляет овокупный вклад компаний Группы АФК «Система» в ВВП Российской Федерации</p>
+      <hr>
+    </div>
   </div>
 
   <div class="row">
-      <div class="col-md-3">
-
+      <div class="col-md-4">
+      Совокупный вклад компаний Группы АФК
+      «Система» в валовой внутренний продукт
+      (ВВП) Российской Федерации в 2015 г.
+      составил около 0,88 %. При этом в 2014      2015 гг. рост выручки компаний Группы
+      превышал темп роста ВВП(1). В 2015 г.
+      консолидированная выручка увеличилась
+      на 9,7 % в годовом сопоставлении благо      даря консолидации Segezha Group (доля
+      лесопромышленного холдинга в выручке
+      Группы АФК «Система» составила 5 %),
+      динамичному росту доходов от услуг
+      передачи данных и продаж смартфонов
+      МТС, а также экспансии «Детского мира»
+      на российском рынке, приобретения
+      Группы «Кронштадт» и сельскохозяй      ственных активов.
       </div>
-      <div class="col-md-9">
-        
+      <div class="col-md-8">
+        <div class="standart">G4-EC1</div>
+        <h2>Созданная и распределенная экономическая стоимость, млрд руб.</h2>
+                 <table class="table table-hover">
+         <thead>
+         <tr>
+         <th>Показатели</th>
+         <th>2015</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr class="info">
+           <td>Созданная стоимость</td>
+           <td>727,1</td>
+         </tr>         
+         <tr>
+           <td>Выручка</td>
+           <td>708,6</td>
+         </tr>         
+         <tr>
+           <td>Финансовые доходы</td>
+           <td>18,5</td>
+         </tr>         
+         <tr class="info">
+           <td>Распределенная стоимость</td>
+           <td>676</td>
+         </tr>         
+         <tr>
+           <td>Операционные расходы</td>
+           <td>529,5</td>
+         </tr>         
+         <tr>
+           <td>Заработная плата и другие выплаты и льготы сотрудникам</td>
+           <td>139,7</td>
+         </tr>
+         <tr>
+           <td>Выплаты государству (налоговые платежи)(</td>
+           <td>66,4</td>
+         </tr>    
+         <tr>
+           <td>Инвестиции в сообщества (благотворительность)</td>
+           <td>1,4</td>
+         </tr>    
+         <tr>
+           <td>Финансовые расходы</td>
+           <td>51,2</td>
+         </tr>   
+          <tr>
+           <td>Дивидендные выплаты</td>
+           <td>27,5</td>
+         </tr>    
+         <tr class="info">
+           <td>Нераспределенная стоимость</td>
+           <td>51,1</td>
+         </tr>    
+              
+         </tbody>
+        </table>
       </div>
   </div>
 
     <div class="row">
-      <div class="col-md-4">
-
+      <div class="col-md-3">
+      <!-- <h2>Доля выручки АФК «Система» от ВВП Российской Федерации, млрд руб.</h2> -->
+      <div id="graphP38left" style="min-width: 270px; height: 350px; margin: 0 auto"></div>
       </div>
-      <div class="col-md-4">
-        
+      <div class="col-md-offset-1 col-md-4">
+      Вследствие масштабов деятельности
+      АФК «Система», Корпорация является
+      одним из крупнейших налогоплатель-
+      щиков в России. Общая сумма налоговых
+      отчислений в федеральный и регио-
+      нальный бюджеты, а также иных обяза-
+      тельных платежей от АФК «Система»
+      за 2015 г. составила около 88,2 млрд руб.
+      При этом порядка 70 % от общего объема
+      налоговых платежей Корпорации посту-
+      пает в федеральный бюджет.
       </div>
-      <div class="col-md-4">
-        
+      <div class="col-md-3">
+        <div id="graphP38right" style="min-width: 270px; height: 350px; margin: 0 auto"></div>
       </div>
   </div>
 
@@ -261,5 +345,10 @@
     </div>
   </div>
 </footer>
+
+<script src="js/highchartsMyTheme.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
 </body>
 </html>
