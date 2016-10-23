@@ -57,17 +57,17 @@ body {
   }
  
 }
-.download{
-  padding-top: 20px;
-}
+// .download{
+//   padding-top: 20px;
+// }
 
-.download a {
-  color: @white;
-  text-decoration: underline;
-}
-.download a:hover {
-  color: @orange;
-}
+// .download a {
+//   color: @white;
+//   text-decoration: underline;
+// }
+// .download a:hover {
+//   color: @orange;
+// }
 
 .search-query {
   padding-left: 10px;
@@ -90,10 +90,19 @@ body {
   a{
     color: @white;
     padding-right: 10px;
-  }  
-  
-
+  } 
 }
+
+.dropdown-toggle { //Инструменты выпадающий список
+  .fa {
+    padding-top: 10px;
+  }
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: lighten(@blueBgColor, 10%); //Инструменты фон при нажатии на кнопку
+}
+
 
 /* /Navigation  */
 
@@ -203,6 +212,9 @@ h3 {
 
 .space {
   margin-top: 40px;
+}
+.space-for-navbar {
+  margin-top: 90px;
 }
 /* /main */
 
