@@ -235,7 +235,7 @@
       <div class="col-md-8">
         <div class="standart">G4-EC1</div>
         <h2>Созданная и распределенная экономическая стоимость, млрд руб.</h2>
-                 <table class="table table-hover">
+       <table class="table table-hover">
          <thead>
          <tr>
          <th>Показатели</th>
@@ -295,7 +295,6 @@
 
     <div class="row">
       <div class="col-md-3">
-      <!-- <h2>Доля выручки АФК «Система» от ВВП Российской Федерации, млрд руб.</h2> -->
       <div id="graphP38left" style="min-width: 270px; height: 350px; margin: 0 auto"></div>
       </div>
       <div class="col-md-offset-1 col-md-4">
@@ -314,10 +313,77 @@
       <div class="col-md-3">
         <div id="graphP38right" style="min-width: 270px; height: 350px; margin: 0 auto"></div>
       </div>
+  </div> <!--/Стр. 38 в PDF-->
+  <div class="space"></div>
+
+   <!--Стр. 39 в PDF-->
+   <div class="row">
+    <div class="col-md-4">
+    <div class="space"></div>
+        <div id="graphP39" style=" height: 350px; margin: 0 auto"></div>
+    </div>
+    <div class="col-md-8">
+    <h2>Платежи во внебюджетные фонды Российской Федерации, млрд руб.</h2>
+      <table class="table table-hover">
+         <thead>
+         <tr>
+         <th>Показатели</th>
+         <th>2014</th>
+         <th>2015</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr class="info">
+           <td>Налоговые отчисления, из них в следующие фонды:</td>
+           <td>100</td>
+           <td>88,2</td>
+         </tr>         
+         <tr>
+           <td>Пенсионный фонд Российской Федерации</td>
+           <td>10,9</td>
+           <td>16,6</td>
+         </tr>                         
+         <tr>
+           <td>Федеральный фонд обязательного медицинского страхования</td>
+           <td>2,0</td>
+           <td>3,9</td>
+         </tr>
+         <tr class="info">
+           <td>Фонд социального страхования</td>
+           <td>0,8</td>
+           <td>0,9</td>
+         </tr>         
+         <tr>
+           <td>Территориальные фонды обязательного медицинского страхования</td>
+           <td>0,8</td>
+           <td>0,4</td>
+         </tr>                 
+           
+              
+         </tbody>
+      </table>
+
+     <div class="number-and-icon col-md-7">
+      <span>21,8 млрд руб.</span>
+      <img src="img/1.2/receiveCash.png" alt="receiveCash">
+      <p>было перечислено из общей суммы налоговых платежей на цели пенсионного, медицинского и социального обеспечения населения в 2015 г.</p>
+      <hr>
+    </div>
+      <div class="col-md-5">
+      Основная часть налоговых отчислений       поступает в бюджеты Москвы (49 %),       Республики Башкортостан (9,2 %),       Московской области (3,7 %), Республики       Карелия (3,4 %) и  абайкальского края
+      (2,4 %).
+    </div>
+
+
+
+    </div>
   </div>
+ <!--/Стр. 39 в PDF-->
 
 </article>
- <!--/Стр. 38 в PDF-->
+
+
+
   
 </div><!--/container между main и article-->
 
@@ -346,9 +412,15 @@
   </div>
 </footer>
 
+<!--графики стр 38-->
 <script src="js/highchartsMyTheme.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
 <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+<!--графики стр 39-->
+<!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 </body>
 </html>
