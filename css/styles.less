@@ -376,6 +376,21 @@ article {
     padding-left: 5px;    
   }
 
+  .standarts { //несколько стандартов в один ряд
+    overflow:hidden;
+    .box { 
+      white-space: nowrap;
+       div {
+         width: 50px;
+         display: inline-block;
+          }
+        }
+  }
+
+
+
+
+
   img {
     text-align: center;
   }
@@ -505,12 +520,18 @@ article {
 
 .table {
   border-top: 1px solid @black;
+  tr {
+    td {
+      font-size: 10px;
+    }
+  }
   
   thead {
     color: @blueBgColor;
     tr {
       th {
         border-bottom: 1px solid @black;
+        font-size: 10px;
       }
     }
   }
