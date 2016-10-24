@@ -26,6 +26,8 @@
   <!-- Scripts -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/graphs.js"></script>
+
 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -549,9 +551,18 @@
 
 <!--   Стр. 32 в PDF   -->
         <div class="row">
-          <div class="col-md-4">График 1</div>
-          <div class="col-md-4">График 2</div>
-          <div class="col-md-4">График 3</div>
+          <div class="col-md-4">
+             <h2>Динамика объема инвестиционной программы корпорации в 2013-2015 гг., млн руб.</h2>
+             <div id="graphP32Left" style=" height: 350px; margin: 0 auto"></div>
+          </div>
+          <div class="col-md-4">
+            <h2>Налоговые платежи компаний Группы АФК "Система" в 2015 г. в разбивке по ДЗК, %</h2>
+             <div id="graphP32Middle" style=" height: 350px; margin: 0 auto"></div>
+           </div>
+          <div class="col-md-4">
+          <h2>Портфель АФК "Система" на основе консолидированной выручки, %</h2>
+           <div id="graphP32Right" style=" height: 350px; margin: 0 auto"></div>
+          </div>
         </div>
 
         <div class="space"></div>
@@ -995,5 +1006,9 @@
     </div>
   </div>
 </footer>
+
+<!--графики стр 32-->
+<script src="js/highchartsMyTheme.js"></script>
+
 </body>
 </html>
