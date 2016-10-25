@@ -442,3 +442,51 @@ $(function () {
     });
 });
 
+//Приложение 1 Стр 101
+//стр. 39
+//Налоговые платежи ДЗК АФК «Система» в 2015 г. в разбивке по бюджетам, млн руб.
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        $('#graphP101').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                // pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: '{series.name} <b>{point.y}</b>'
+
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: ' ',
+                colorByPoint: true,
+                data: [{
+                    name: 'Внутренние',
+                    y: 31
+                }, {
+                    name: 'Внешние',
+                    y: 17
+                }
+                ]
+            }]
+        });
+    });
+});
