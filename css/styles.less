@@ -597,9 +597,154 @@ table {
       margin-right: 10px;
     }
 }
-
-
 /* /Интерактивная аналитика */
+
+
+/* Награды и достижения */
+.honors_slider {
+      /* Global */
+    // body {
+    //     background: #a83b3b;
+    //     padding: 40px;
+    // }  
+
+    div { word-break: break-all; }
+
+    img { max-width:100%; }
+
+    a {
+      -webkit-transition: all 150ms ease;
+      -moz-transition: all 150ms ease;
+      -ms-transition: all 150ms ease;
+      -o-transition: all 150ms ease;
+      transition: all 150ms ease; 
+      }
+        a:hover {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+            filter: alpha(opacity=50); /* IE7 */
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+
+    /* Container */
+    .container-fluid {
+        // background: #fbf4e0;
+        margin: 40px auto 10px;
+        padding: 20px 0px;
+        max-width: 960px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* Page Header */
+    .page-header {
+        // background: #fbf4e0;
+        margin: -30px 0px 0px;
+        padding: 20px 40px;
+        border-top: 4px solid #ccc;
+        // color: #a83b3b;
+        text-transform: uppercase;
+        }
+        // .page-header h3 {
+        //     line-height: 0.88rem;
+        //     color: #a83b3b;
+        //     }
+
+
+
+    /* Thumbnail Box */
+    .caption {
+        height: 140px;
+        width: 100%;
+        margin: 20px 0px;
+        padding: 20px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+    }
+    .caption .span4, .caption .span8 {
+        padding: 0px 20px;
+    }
+    .caption .span4 {
+        border-right: 1px dotted #CCCCCC;
+    }
+    .caption h3 {
+        // color: #a83b3b;
+        line-height: 2rem;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        }
+        .caption p {
+            font-size: 1rem;
+            line-height: 1.6rem;
+            // color: #a83b3b;
+            }
+            .btn.btn-mini {
+                background: #a83b3b;
+                border-radius: 0 0 0 0;
+                color: #fbf4e0;
+                font-size: 0.63rem;
+                text-shadow: none !important;
+                }
+    .carousel-control {
+        top: 33%;
+    }
+
+
+    /* переворот */
+    
+    /* весь контейнер поддерживает перспективу */
+      .flip-container {
+        perspective: 1000;
+      }
+        /* переверните сторону при проведении мышью */
+        .flip-container:hover .flipper, .flip-container.hover .flipper {
+          transform: rotateY(180deg);
+        }
+
+      .flip-container, .front, .back {
+        width: 320px;
+        height: 480px;
+      }
+
+      /* здесь находится скорость перевертывания */
+      .flipper {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+
+        position: relative;
+      }
+
+      /* скройте обратную сторону во время переворота */
+      .front, .back {
+        backface-visibility: hidden;
+        // width: 300px;
+         position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      /* лицевая сторона размещена над обратной */
+      .front {
+        z-index: 2;
+      }
+
+      /* обратная, изначально скрытая сторона */
+      .back {
+        transform: rotateY(180deg);
+      }
+
+    /* /переворот */
+   
+
+
+
+}/* /.honors_slider */
+
+/* /Награды и достижения */
+
+
 /* /Спецстраницы */
 
 
