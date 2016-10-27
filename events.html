@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="css/events.css" rel="stylesheet">
  
 
   <!--LESS-->
@@ -26,8 +27,7 @@
   <!-- Scripts -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/graphs.js"></script>
-
+  <script src="js/events/modernizr.js"></script> <!-- Modernizr -->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -195,20 +195,217 @@
 
  </div><!-- /#sidebar-wrapper -->
  </div> <!--/container sidebar-->
+
+<!-- <div class="col-md-offset-3 col-md-9 col-xs-12 print-and-likes">
+  <a title="Печать"><i class="fa fa-print"></i></a>
+  <a title="Добавить в Избранное"><i class="fa fa-star-o"></i></a>
+</div>
+ -->
 <main>
   <div class="container">
-    <article class="col-md-offset-3 col-md-9 col-xs-12">
-      <h1>Об отчете</h1>
-      <p>Информация о компании</p>
-    </article>
-  </div><!--/container между main и article-->
+  <article class="col-md-offset-3 col-md-9 col-xs-12">
+  <h1>Календарь событий</h1>
+  <section class="cd-horizontal-timeline">
+  <div class="timeline">
+    <div class="events-wrapper">
+      <div class="events">
+        <ul>
+          <li><a href="#0" data-date="01/01/2015" class="selected">Январь</a></li>
+          <li><a href="#0" data-date="01/02/2015">Февраль</a></li>
+          <li><a href="#0" data-date="01/03/2015">Март</a></li>
+          <li><a href="#0" data-date="01/04/2015">Апрель</a></li>
+          <li><a href="#0" data-date="01/05/2015">Май</a></li>
+          <li><a href="#0" data-date="01/06/2015">Июнь</a></li>
+          <li><a href="#0" data-date="01/07/2015">Июль</a></li>
+          <li><a href="#0" data-date="01/08/2015">Август</a></li>
+          <li><a href="#0" data-date="01/09/2015">Сентябрь</a></li>
+          <li><a href="#0" data-date="01/10/2015">Октябрь</a></li>
+          <li><a href="#0" data-date="01/11/2015">Ноябрь</a></li>
+          <li><a href="#0" data-date="01/12/2015">Декабрь</a></li>
+        </ul>
+        <span class="filling-line" aria-hidden="true"></span>
+      </div> <!-- .events -->
+    </div> <!-- .events-wrapper -->
+      
+    <ul class="cd-timeline-navigation">
+      <li><a href="#0" class="prev inactive">Prev</a></li>
+      <li><a href="#0" class="next">Next</a></li>
+    </ul> <!-- .cd-timeline-navigation -->
+  </div> <!-- .timeline -->
+
+  <div class="events-content">
+    <ul>
+      <li class="selected" data-date="01/01/2015">     
+        <h2>Январь</h2>
+        <div class="row">
+          <h3>КОНКУРС ИДЕЙ<h3>
+          <p> 
+            В рамках Всероссийской научно-образовательной программы «Лифт в будущее» в Москве состоялся финал молодежного конкурса «Intellect2All» по выявлению перспективных технологических идей и разработок студентов, молодых исследователей, разработчиков и предпринимателей. На конкурс было подано более 400 заявок.
+          </p>
+        </div>
+
+      </li>
+
+      <li class="selected" data-date="01/02/2015">     
+        <h2>Февраль</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>ИМПОРТОЗАМЕЩЕНИЕ <h3>
+            <img src="img/events/2-1.PNG" alt="">
+            <p> 
+             БЭСК подписала соглашение с компанией Siemens AG о производстве в Башкортостане инновационного импортозамещающего электросетевого оборудования для проекта «Умные сети» (Smart Grid).
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>ОБРАЗОВАНИЕ <h3>
+            <img src="img/events/2-2.PNG" alt="">
+            <p> 
+             Подписано соглашение между БФ «Система» и НП «Шахматы в школе» о содействии включению шахмат в российскую школьную программу и усилению роли шахмат в образовательных инициативах
+            </p>
+          </div>
+        </div>
+
+      </li>
+
+      <li data-date="01/03/2015">
+        <h2>Март</h2>
+         <div class="row">
+          <div class="col-md-4">
+            <h3>МОЛОДЕЖНЫЙ САММИТ<h3>
+            <img src="img/events/3-1.PNG" alt="">
+            <p> 
+              АФК «Система», МТС и SSTL провели международный инновационный молодежный саммит в Московской школе управления «Сколково»
+            </p>
+          </div>          
+          <div class="col-md-4">
+            <h3>ПАРТНЕРСТВО С РЕГИОНАМИ <h3>
+            <p> 
+              АФК «Система» подписала соглашения о социально-экономическом сотрудничестве с правительствами Вологодской и Кировской областей.
+              Segezha Group и Петрозаводский государственный университет подписали соглашение о научно-техническом сотрудничестве.
+            </p>
+          </div>          
+          <div class="col-md-4">
+            <h3>ХАРТИЯ<h3>
+            <p> 
+             ПАО «МТС» и ГК «Детский мир» присоединились к Антикоррупционной хартии российского бизнеса. 
+            </p>
+          </div>
+         </div>          
+         <div class="row">
+          <div class="col-md-4">
+            <h3>ЗАБОТА О ВЕТЕРАНАХ<h3>
+            <img src="img/events/3-2.PNG" alt="">
+            <p> 
+              АФК «Система» заключила соглашение о сотрудничестве с Московским городским советом ветеранов войны, труда, Вооруженных Сил и правоохранительных органов (МГСВ).
+              <img src="img/events/3-3.PNG" alt="">
+              Старт совместной социальной программы БФ «Система», ГК «Медси», МГСВ и Департамента труда и социальной защиты города Москвы по бесплатному санаторно-курортному лечению ветеранов Великой Отечественной войны на базе подмосковного санатория МЕДСИ «Отрадное».
+            </p>
+          </div>          
+          <div class="col-md-4">
+            <h3>ШКОЛА «ЛИФТ В БУДУЩЕЕ» <h3>
+            <img src="img/events/3-4.PNG" alt="">
+            <p> 
+              Открытие весенней научно-образовательную школы «Лифт в будущее» в городе Сукко Краснодарского края, в работе которой приняли участие 500 детей со всей России.
+            </p>
+          </div>          
+          <div class="col-md-4">
+            <h3>ПРЕМИЯ «HR-БРЕНД»</h3>
+            <img src="img/events/3-5.PNG" alt="">
+            <p> 
+            АФК «Система» выступила партнером премии «HR-бренд». Почетный член жюри Елена Витчак, вице-президент, руководитель Департамента по управлению персоналом, вручила награды в номинации «Мир» за лучшие HR-проекты, реализованные в России и других странах мира.  
+            </p>
+          </div>
+         </div> 
+      </li>
+
+      <li data-date="01/04/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/05/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/06/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/07/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/08/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/09/2015">
+        <h2>Event title here</h2>
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/10/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+
+      <li data-date="01/11/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>     
+       <li data-date="01/12/2015">
+        <h2> </h2>
+        <h3> <h3>
+        <p> 
+
+        </p>
+      </li>
+    </ul>
+  </div> <!-- .events-content -->
+</section>
+  
+
+  </article>
+
+</div><!--/container между main и article-->
 
 </main>
 <!-- </div> /main-container -->
 
+
 <footer>
   <div class="container"> 
     <div class="col-md-4 copyright">
+     <!--  &copy; 2016 ПАО "АФК-система" -->
     </div>
     <div class="col-md-3 social">
           <ul class="social-icons">
@@ -225,6 +422,10 @@
     </div>
   </div>
 </footer>
+
+<script src="/js/events/jquery-2.1.4.js"></script>
+<script src="/js/events/jquery.mobile.custom.min.js"></script>
+<script src="/js/events/main.js"></script> <!-- Resource jQuery -->
 
 </body>
 </html>
