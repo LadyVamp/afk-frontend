@@ -23,8 +23,8 @@ body {
   background-color: @bgColor;
   color: black;
   font-family: 'WhitneyBook','WhitneyLight','Helvetica','Arial', sans-serif;
+  overflow-x: hidden !important; //от белой полосы
 }
-
 
 /* Variables */
 @bgColor: #fff;
@@ -466,6 +466,12 @@ article {
   img {
     float: right;
   }
+
+
+} /*  /stakeholder*/
+/* /1.8. Взаимодействие с заинтересованными сторонами */
+
+
   .float-left {
     float: left;
   }  
@@ -478,8 +484,6 @@ article {
     margin-left: 10px;
   }
 
-} /*  /stakeholder*/
-/* /1.8. Взаимодействие с заинтересованными сторонами */
 
   } /* /article */
 
@@ -535,6 +539,26 @@ article {
 }
 }
 /* /accordeon */
+
+/* 2.1. */
+#accordion21 {
+  .portrait-quote {
+    img {
+      width: 280px;
+    }
+  }
+
+  .rez {
+    color: @gray;
+    font-size: 12px;
+    span {
+      font-size: 25px;
+    }
+    
+  }
+}
+/* /2.1. */
+
 
 .table {
   border-top: 1px solid @black;
