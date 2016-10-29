@@ -351,6 +351,7 @@ article {
 
   .intro {
     color: @articleIntro;
+    // text-align: justify;
   }
 
   .portrait-quote {
@@ -424,6 +425,9 @@ article {
 
 /* 1.8. Взаимодействие с заинтересованными сторонами */
 .stakeholder {
+  p {
+    text-align: justify;
+  }
   li {
     list-style-type: none; /* Прячем исходные маркеры */
     padding-left: 0;
@@ -448,12 +452,31 @@ article {
     }
   }
  }
-.case {
-  p {
-    background-color: @gray;
-  }
+
   
 }
+
+.case {
+
+  p {
+    // background-color: @gray;
+    // float: left;
+    text-align: justify;
+  }
+  img {
+    float: right;
+  }
+  .float-left {
+    float: left;
+  }  
+
+  .float-right {
+    float: right;
+  }
+  .img-in-text {
+    width: 230px;
+    margin-left: 10px;
+  }
 
 } /*  /stakeholder*/
 /* /1.8. Взаимодействие с заинтересованными сторонами */
