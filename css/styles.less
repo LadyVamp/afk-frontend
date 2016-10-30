@@ -61,17 +61,6 @@ body {
   }
  
 }
-// .download{
-//   padding-top: 20px;
-// }
-
-// .download a {
-//   color: @white;
-//   text-decoration: underline;
-// }
-// .download a:hover {
-//   color: @orange;
-// }
 
 .search-query {
   padding-left: 10px;
@@ -693,6 +682,7 @@ table {
         height: 100px;
         width: 100%;
         margin-bottom: 20px;
+        margin-top: 20px;
         padding: 20px;
         box-sizing:border-box;
         -moz-box-sizing:border-box;
@@ -720,18 +710,54 @@ table {
            }
 
     }
-            
-    .carousel-control {
-        // top: 33%;
-    }
+
+
+
+     .control-box { //стрелочки в слайдере
+       .left {
+         background-image: url(/img/honors/CircledChevronLeft.png);
+         background-position: 20px 45px;
+         background-repeat: no-repeat;
+       }
+
+      .right {
+         background-image: url(/img/honors/CircledChevronRight.png);
+         background-position: 50px 45px;
+         background-repeat: no-repeat;         
+     }
+
+   } /* /control-box */
+   
+   @media(max-width:768px) {
+     .control-box { //стрелочки в слайдере на мелких экранах
+       .left {
+         background-image: url(/img/honors/CircledChevronLeft.png);
+         background-repeat: no-repeat;
+         background-position: 15px 50px;
+         // background-position: 60% 3.5%;
+         background-size: 30px;
+       }
+
+      .right {
+         background-image: url(/img/honors/CircledChevronRight.png);
+         background-repeat: no-repeat;         
+         background-position: -1px 50px;
+         // background-position: 5% 3.5%;
+         background-size: 30px;
+     }
+
+   } /* /control-box */
+
+}
+
+
 }/* /.honors_slider */
 /* /Награды и достижения */
 
 
 /* Главная страница */
 
-.mainpage {
-   
+.mainpage { 
     margin: 0 auto;
     background: url(/img/mainpage/background.png) no-repeat top center;
     background-size: cover;
@@ -775,8 +801,7 @@ table {
         a {
           margin-right: 20px;
         }
-        
-        // margin: 10px;
+
         .btn {
           padding: 8px;
           margin-top: 10px;
@@ -893,7 +918,6 @@ footer {
 
     
 i.fa { /*иконки в контактах*/
-    // margin-right: 10px;
     color: @black;
   }
 
