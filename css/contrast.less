@@ -1,0 +1,338 @@
+/* Variables */
+@bgColor: #fff;
+@blueBgColor: #005587;
+@white: #fff;
+@black: #000;
+@orange: #fbb050;
+@asideBg: #cce0f4;
+@articleIntro: #5993ce;
+@red: #d2232a;
+@green: #00703a;
+@blue: #005587;
+@light-blue: #19b2ec;
+@gray: #777;
+@honorsBlue: #5b94cd;
+
+body {
+  background-color: @bgColor;
+  color: black;
+}
+
+.navbar-default{
+  background-color: @blueBgColor;
+}
+
+#right-icons {
+  ul {
+     color: @white;
+  }
+ 
+ .navbar-default .navbar-nav>li>a {
+    color: @white;
+}
+
+.icons{
+  color: @white;
+  a{
+    color: @white;
+  } 
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: lighten(@blueBgColor, 10%); //Инструменты фон при нажатии на кнопку
+}
+
+.sidebar-nav li a {
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+}
+
+.panel-default {
+  .panel-heading {
+    color: @white;
+    background-color: @blueBgColor;
+    border-color: #ddd;
+    text-transform: uppercase;
+    }
+
+  .panel-body{
+
+    background-color: @asideBg;
+    a {
+          color: @black;
+      } 
+
+    .hover-active(){ /*Mixin*/
+       color: @white;
+       background-color: @blueBgColor;
+       text-decoration: none;
+    }
+       
+  }  
+}
+
+}
+/* /Sidebar */
+
+h1, h2, h3 {
+  color: @blueBgColor;
+}
+
+.orange {
+  color: @orange;
+}
+
+.red {
+  color: @red;
+}
+
+.green {
+  color: @green;
+}
+
+.blue{
+  color: @blue;
+}
+
+.light-blue{
+  color: @light-blue;
+}
+
+.blue-headers {
+  h3 {
+    color: @blue;
+  }
+}
+
+.green-headers {
+  h3 {
+    color: @green;
+  }
+}
+
+article {
+	  .intro {
+    color: @articleIntro;
+  }
+
+      blockquote {
+       color: @articleIntro;
+       span {
+         color: @black;
+       }
+    }
+
+     p {
+    color: @black;
+  }
+
+  .standart {
+    color: @white;
+    background-color: @articleIntro;
+  }
+
+    .light-blue-rectangle {
+    background-color: @asideBg;
+    color: @blue;
+  } 
+
+  .number-and-icon { //1.2 p.38
+  span {
+    color: @blueBgColor;    
+  }
+  p {
+    color: @gray;
+  }
+}
+
+}
+
+/* accordeon внутри article */
+article {
+  .panel-default {
+  .panel-heading {
+    color: @white;
+    background-color: @blueBgColor;
+    border-color: #ddd;
+  
+    }
+  .panel-body {
+    background-color: @bgColor !important;
+
+    /* Оранжевые маркеры */
+   li:before {
+    color: @orange; /* Цвет маркера */
+    content: "• "; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+   }
+
+    background-color: @asideBg;
+    a {
+          color: @black;
+      } 
+
+    .hover-active(){ /*Mixin*/
+       color: @white;
+       background-color: @blueBgColor;
+       text-decoration: none;
+    }    
+  }  
+}
+}
+/* /accordeon */
+
+/* 2.1. */
+#accordion21 {
+
+  .rez {
+    color: @gray;    
+  }
+}
+
+table {
+	  thead {
+    color: @blueBgColor;
+    tr {
+      th {
+        border-bottom: 1px solid @black;
+      }
+    }
+  }
+
+   tbody {
+    tr {
+      td {
+        border-bottom: 1px solid @black;
+      }
+    }
+  }
+}
+
+/* Приложения */
+.small-font {
+  font-size: 10px;
+  color: @gray;
+  margin: 10px 0;
+}
+
+table {
+  .uppercase {
+    text-transform: uppercase;
+    color: blue;
+  }
+}
+/* /Приложения */
+
+   .blueBg {
+      background: @honorsBlue;
+      
+        h3, p {
+          color: @white;
+        }
+    }
+    .orangeBg {
+      background: @orange;
+      
+        h3, p {
+          color: @blue;
+        }
+    }    
+    .greenBg {
+      background: @green;
+      
+        h3, p {
+          color: @white;
+        }
+    }    
+    .redBg {
+      background: @red;
+      
+        h3, p {
+          color: @white;
+        }
+    }
+
+    /* Главная страница */
+
+.mainpage {   
+    main {
+      .left-text {
+        color: @gray;
+        
+        span {
+          color: @blue;
+        }
+      }
+
+      .mainpage-buttons {
+        
+
+        .btn-primary {
+          color: @white;
+          background-color: @blue;
+          border-color: @blue;
+          width: 130px;
+        }
+        .btn-primary:hover {
+          background-color: lighten(@blue, 10%);
+        }
+        
+      } 
+    }
+}
+/* /Главная страница */
+
+/* footer */
+footer {
+  background-color: @asideBg;
+  
+  .links{
+     a {
+       color: @black;
+     }
+  }
+
+    
+i.fa { /*иконки в контактах*/
+    // margin-right: 10px;
+    color: @black;
+  }
+
+  .fa-twitter:hover {
+     color: #3399ff;
+  }
+
+  .fa-vk:hover {
+     color: #4C75A3;
+  }
+
+  .fa-facebook:hover {
+     color: #3765A3;
+  }
+
+  .fa-odnoklassniki:hover {
+     color: @orange;
+  }
+
+   .social-icons {
+    text-align: center;
+     i {
+      color: @black;
+       }
+
+  } /* /social-icons */
+
+
+}  /* /footer */
