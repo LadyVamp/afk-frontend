@@ -246,28 +246,66 @@ and (max-device-width : 414px)
 } /*  /@media(min-width:768px)*/
 
 
-@media only screen  
+@media only screen  //    iPhone
 and (min-device-width : 414px) 
 and (max-device-width : 579px)
 { 
     #sidebar-wrapper {
-        width: 180px;
+        width: 140px !important;
     }
 
-  }
-@media only screen //  ширина sidebar для iPad
+       #page-content-wrapper {
+        padding: 1px !important;
+        position: relative;
+    }
+
+    #page-content-wrapper {
+      padding: 5px;
+    }
+    .panel-body {
+      padding: 1px !important;
+    }
+    #sidebar-wrapper {
+      left: 250px;
+    }
+
+    article {
+      h1, h2, h3 {
+        margin-left: 10px;
+      }
+
+      h1 {
+        font-size: 25px !important;
+      }    
+      h2 {
+        font-size: 20px;
+      }
+
+
+        .img-in-text {
+          width: 100% !important;
+        }
+
+
+
+    } /* /arcticle for iPhone*/
+  
+
+}
+
+@media only screen //   iPad
 and (min-device-width : 580px) 
 and (max-device-width : 768px)
 { 
-    #sidebar-wrapper {
+    #sidebar-wrapper {             //  ширина sidebar для iPad
         width: 200px !important;
     }
 
     .panel-body {
     padding: 5px;
-}
+    }
 
-  }
+}  /* /sidebar for iPad*/
 
 
 @media(min-width: 769px) 
@@ -550,6 +588,13 @@ article {
     width: 230px;
     margin-left: 10px;
     margin-right: 5px;
+  }
+
+  .case-icon {
+    width: 50px;
+  }  
+  .case-logo {
+    width: 150px;
   }
 
 
