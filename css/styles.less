@@ -153,10 +153,12 @@ and (max-device-width : 414px)
 
 #wrapper.toggled #sidebar-wrapper {
     width: 300px;
+    // width: 200px;
 }
 
 #page-content-wrapper {
     width: 100%;
+    // width: 200px;
     position: absolute;
     padding: 15px;
 }
@@ -172,6 +174,7 @@ and (max-device-width : 414px)
     position: absolute;
     top: 0;
     width: 300px;
+    // width: 200px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -240,7 +243,43 @@ and (max-device-width : 414px)
         position: relative;
         margin-right: 0;
     }
+} /*  /@media(min-width:768px)*/
+
+
+@media only screen  
+and (min-device-width : 414px) 
+and (max-device-width : 579px)
+{ 
+    #sidebar-wrapper {
+        width: 180px;
+    }
+
+  }
+@media only screen //  ширина sidebar для iPad
+and (min-device-width : 580px) 
+and (max-device-width : 768px)
+{ 
+    #sidebar-wrapper {
+        width: 200px !important;
+    }
+
+    .panel-body {
+    padding: 5px;
 }
+
+  }
+
+
+@media(min-width: 769px) 
+{ 
+    #sidebar-wrapper {
+        width: 300px;
+    }
+
+  }
+
+
+
 
 #sidebar-wrapper {
 
@@ -302,7 +341,7 @@ and (max-device-width : 414px)
 
 /* main */
 main {
-  min-height: 600px; //чтобы футер не подскакивал
+  min-height: 700px; //чтобы футер не подскакивал
 }
 
   
@@ -431,6 +470,7 @@ article {
 
   img {
     text-align: center;
+    width: 100%;
   }
 
   .light-blue-rectangle {
@@ -698,7 +738,7 @@ table {
 /* Награды и достижения */
 .honors_slider {
     .item {
-      min-height: 600px;
+      min-height: 900px;
       padding-bottom: 20px;
     } 
 
