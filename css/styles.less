@@ -141,7 +141,6 @@ and (max-device-width : 414px)
     position: fixed;
     left: 300px;
     width: 0;
-    // height: 90%;
     margin-left: -250px;
     overflow-y: auto;
     background: @asideBg;
@@ -243,12 +242,16 @@ and (max-device-width : 414px)
         position: relative;
         margin-right: 0;
     }
+
+    // .container { //чиню navbar на 1.1
+    //   margin-left: 0; 
+    // }
 } /*  /@media(min-width:768px)*/
 
 
 @media only screen  //    iPhone
-and (min-device-width : 414px) 
-and (max-device-width : 579px)
+and (min-device-width : 320px) 
+and (max-device-width : 666px)
 { 
     #sidebar-wrapper {
         width: 140px !important;
@@ -286,16 +289,25 @@ and (max-device-width : 579px)
           width: 100% !important;
         }
 
-
-
     } /* /arcticle for iPhone*/
-  
+    
+        .navbar-brand img {
+          width: 150px;
+    }
+
+        .container>.navbar-header {
+    margin-right: 425px;
+    // margin-right: 25px;
+    margin-left: -15px;
+  }
+ 
 
 }
 
 @media only screen //   iPad
-and (min-device-width : 580px) 
-and (max-device-width : 768px)
+and (min-device-width : 667px) 
+// and (max-device-width : 768px)
+and (max-device-width : 1024px)
 { 
     #sidebar-wrapper {             //  ширина sidebar для iPad
         width: 200px !important;
@@ -305,10 +317,19 @@ and (max-device-width : 768px)
     padding: 5px;
     }
 
-}  /* /sidebar for iPad*/
+    article .portrait-quote img {
+      width: 60%;
+    }
+
+   //  .container>.navbar-header { //для видимости кнопки-гамбургера
+   //  margin-right: 245px;
+   //  margin-left: -15px;
+   // }
+
+}  
 
 
-@media(min-width: 769px) 
+@media(min-width: 1025px) 
 { 
     #sidebar-wrapper {
         width: 300px;
@@ -1153,8 +1174,10 @@ i.fa { /*иконки в контактах*/
       margin: 0 5px;
       color: @black;
       font-size: 18px;
-      height: 35px;
-      width: 35px;
+      // height: 35px;
+      // width: 35px;      
+      height: 30px;
+      width: 30px;
       line-height: 34px;
       text-align: center;
       -o-transition: .5s;
