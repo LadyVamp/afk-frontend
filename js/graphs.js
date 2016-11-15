@@ -40,7 +40,7 @@ $(function () {
         },
 
         series: [{
-            name: 'Выручка, млрд. руб',
+            name: 'Выручка, млрд руб',
             colorByPoint: true,
             data: [{
                 name: '2013',
@@ -244,7 +244,7 @@ $(function () {
         },
 
         series: [{
-            name: 'Выручка, млрд. руб',
+            name: 'Выручка, млрд руб',
             colorByPoint: true,
             data: [{
                 name: '2014',
@@ -298,11 +298,11 @@ $(function () {
         },
 
         tooltip: {
-            pointFormat: '<span style="color:{point.color}"></span><b></b><br/> {point.y} млрд. руб.<br/>'
+            pointFormat: '<span style="color:{point.color}"></span><b></b><br/> {point.y} млрд руб.<br/>'
         },
 
         series: [{
-            name: 'Выручка, млрд. руб',
+            name: 'Выручка, млрд руб',
             colorByPoint: true,
             data: [{
                 name: 'Дочерние независимые компании',
@@ -717,7 +717,7 @@ $(function () {
         },
 
         series: [{
-            // name: 'Выручка, млрд. руб',
+            // name: 'Выручка, млрд руб',
             name: ' ',
             colorByPoint: true,
             data: [{

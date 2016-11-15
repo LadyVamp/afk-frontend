@@ -203,7 +203,8 @@
             <a data-toggle="collapse" data-parent="#accordion21" href="#collapse211">2.1.1. Новые кадры для инновационной экономики</a>
           </h2>
         </div>
-        <div id="collapse211" class="panel-collapse collapse in">
+        <div id="collapse211" class="panel-collapse collapse">
+        <!--/чтобы был по умолчанию открыт, добавить класс "in" после "collapse"-->
         <!-- Содержимое 1 панели -->
         <div class="panel-body">
             <div class="row">
@@ -676,7 +677,7 @@
             <a data-toggle="collapse" data-parent="#accordion21" href="#collapse212">2.1.2. Развитие инновационного потенциала молодежи</a>
           </h2>
         </div>
-        <div id="collapse212" class="panel-collapse collapse">
+        <div id="collapse212" class="panel-collapse collapse ">
           <!-- Содержимое 2 панели -->
           <div class="panel-body">
           <article>
@@ -878,6 +879,21 @@
   </div>   
   </div>
 </footer>
+
+<script type="text/javascript">
+/*  автоматические поднять страницу при открытии спойлера-аккордеона*/
+  $('.panel-title a').on('click',function(){
+    var that = $(this);
+    setTimeout(function(){
+            var sh = that.offset().top,
+                // sho = 10;
+                sho = $('article').height();  //высота article
+        $('html, body').animate({
+            scrollTop: sh - sho
+        }, 'slow');
+    },250);
+});
+</script>
 
 </body>
 </html>
