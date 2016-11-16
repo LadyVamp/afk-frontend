@@ -599,42 +599,42 @@
 </footer>
 
 <!--скрипты со всех страниц-->
-	<!--календарь событий-->
-	<script src="/js/events/jquery-2.1.4.js"></script>
-	<script src="/js/events/jquery.mobile.custom.min.js"></script>
-	<script src="/js/events/main.js"></script> <!-- Resource jQuery -->
+  <!--календарь событий-->
+  <script src="/js/events/jquery-2.1.4.js"></script>
+  <script src="/js/events/jquery.mobile.custom.min.js"></script>
+  <script src="/js/events/main.js"></script> <!-- Resource jQuery -->
 
-	<!--графики Гистограммы-->
-	<script src="/js/highchartsMyTheme.js"></script>
-	<script src="https://code.highcharts.com/modules/data.js"></script>
-	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+  <!--графики Гистограммы-->
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/drilldown.js"></script>
 
-	<!--графики Pie Chart-->
-	<script src="/js/highchartsMyTheme.js"></script>
-	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <!--графики Pie Chart-->
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-	<!--интерактивная аналитика-->
-	<script src="/js/interactive_analytics/jquery-1.12.0.min.js""></script>
-	<script src="/js/highchartsMyTheme.js"></script>
-	<script src="/js/interactive_analytics/graph.js"></script>
+  <!--интерактивная аналитика-->
+  <script src="/js/interactive_analytics/jquery-1.12.0.min.js""></script>
+  <script src="/js/interactive_analytics/graph.js"></script>
+
+  <!--цвета графиков-->
+  <script src="/js/highchartsMyTheme.js"></script>
 
 
-	<!--автоматические поднять страницу при открытии спойлера-аккордеона 2.1-->
-	<script type="text/javascript">
-	  $('.panel-title a').on('click',function(){
-	    var that = $(this);
-	    setTimeout(function(){
-	            var sh = that.offset().top,
-	                // sho = 10;
-	                sho = $('article').height();  //высота article
-	        $('html, body').animate({
-	            scrollTop: sh - sho
-	        }, 'slow');
-	    },250);
-	});
-	</script>
-<!-- /скрипты со всех страниц-->	
+  <!--автоматические поднять страницу при открытии спойлера-аккордеона 2.1-->
+  <script type="text/javascript">
+    $('.panel-title a').on('click',function(){
+      var that = $(this);
+      setTimeout(function(){
+              var sh = that.offset().top,
+                  // sho = 10;
+                  sho = $('article').height();  //высота article
+          $('html, body').animate({
+              scrollTop: sh - sho
+          }, 'slow');
+      },250);
+  });
+  </script>
+<!-- /скрипты со всех страниц-->
 
 </body>
 </html>
